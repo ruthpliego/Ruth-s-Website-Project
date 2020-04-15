@@ -3,12 +3,17 @@
 *{box-sizing: border-box}
 
 header {
+	background-color:#676767;
 	margin-top: 20px;
-	width: 960px;
+	width: 1001px;
 	height: 200px;
-	border-radius: 20px;
-	text-align:center;
-	color: #E9D0F4;
+	font-family: 'Teko', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+	text-align: right;
+	padding-top: 60px;
+	padding-right: 15px;
+	font-size: 55px;
+	color: #FFFFFF;
 text-shadow: 3px 3px rgba(196 196 196 50)
 }
 
@@ -70,6 +75,7 @@ text-shadow: 3px 3px rgba(196 196 196 50)
 body {
 	margin:auto;
 	width: 1001px;
+	background-color:#E1E1E1;
 }
 
 .news{
