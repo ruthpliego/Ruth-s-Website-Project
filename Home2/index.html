@@ -4,9 +4,8 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
-	
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<title>Home – 2</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
@@ -23,16 +22,15 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-	
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Home;
-		--web-view-id: Home;
+		--web-view-name: Home – 2;
+		--web-view-id: Home___2;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Home;
+		--web-view-ids: Home___2;
 	}
 	* {
 		margin: 0;
@@ -40,29 +38,19 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Home {
+	#Home___2 {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(225,225,225,1);
 		overflow: hidden;
-		--web-view-name: Home;
-		--web-view-id: Home;
+		--web-view-name: Home – 2;
+		--web-view-id: Home___2;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	@keyframes  {
 	
-	
-	}
-	@keyframes fadein {
-	
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
 	
 	}
 	.Rectangle_1 {
@@ -121,7 +109,7 @@
 		font-size: 75px;
 		color: rgba(255,255,255,1);
 	}
-	#Home_y {
+	#Home {
 		position: absolute;
 		left: 174px;
 		top: 296px;
@@ -142,9 +130,9 @@
 		overflow: visible;
 		width: 59px;
 		white-space: nowrap;
-		--web-animation: fadein undefineds undefined;
+		--web-animation: fadein 0.3s linear;
 		--web-action-type: page;
-		--web-action-target: about/index.html;
+		--web-action-target: ../about/index.html;
 		cursor: pointer;
 		text-align: left;
 		font-family: Yu Gothic;
@@ -160,9 +148,9 @@
 		overflow: visible;
 		width: 51px;
 		white-space: nowrap;
-		--web-animation: fadein 0.3s ease-out;
+		--web-animation: fadein 0.3s linear;
 		--web-action-type: page;
-		--web-action-target: shop/index.html;
+		--web-action-target: ../shop/index.html;
 		cursor: pointer;
 		text-align: left;
 		font-family: Yu Gothic;
@@ -178,9 +166,9 @@
 		overflow: visible;
 		width: 109px;
 		white-space: nowrap;
-		--web-animation: fadein 0.3s ease-out;
+		--web-animation: fadein 0.3s linear;
 		--web-action-type: page;
-		--web-action-target: contact/index.html;
+		--web-action-target: ../contact/index.html;
 		cursor: pointer;
 		text-align: left;
 		font-family: Yu Gothic;
@@ -196,9 +184,9 @@
 		overflow: visible;
 		width: 42px;
 		white-space: nowrap;
-		--web-animation: fadein 0.3s ease-out;
+		--web-animation: fadein 0.3s linear;
 		--web-action-type: page;
-		--web-action-target: faq/index.html;
+		--web-action-target: ../faq/index.html;
 		cursor: pointer;
 		text-align: left;
 		font-family: Yu Gothic;
@@ -236,6 +224,10 @@
 		height: 44px;
 		left: 1451px;
 		top: 926px;
+		--web-animation: fadein 0.3s linear;
+		--web-action-type: page;
+		--web-action-target: ../email/index.html;
+		cursor: pointer;
 	}
 	#Sign_Up_for_Info_ {
 		position: absolute;
@@ -272,10 +264,6 @@
 		overflow: visible;
 		width: 77px;
 		white-space: nowrap;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: email/index.html;
-		cursor: pointer;
 		text-align: left;
 		font-family: Yu Gothic;
 		font-style: normal;
@@ -287,12 +275,12 @@
 		position: absolute;
 		width: 2486px;
 		height: 397px;
-		left: 554px;
+		left: -1098px;
 		top: 356px;
 		overflow: visible;
 		--web-animation: fadein 0.3s linear;
 		--web-action-type: page;
-		--web-action-target: home1/index.html;
+		--web-action-target: ../home3/index.html;
 		cursor: pointer;
 	}
 	#Repeat_Grid_1 {
@@ -629,7 +617,6 @@ var Application = function() {
 	// refresh properties
 	this.refreshDuration = 250;
 	this.lastModifiedDate = null;
-
 	this.refreshRequest = null;
 	this.refreshInterval = null;
 	this.refreshContent = null;
@@ -2277,6 +2264,7 @@ var Application = function() {
 	self.getApplicationStylesheet = function() {
 		var stylesheetId = self.getViewPreferenceValue(document.body, self.prefix + "stylesheet-id");
 		self.applicationStylesheet = document.getElementById("applicationStylesheet");
+
 		return self.applicationStylesheet.sheet;
 	}
 
@@ -2979,7 +2967,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Home">
+<div id="Home___2">
 	<svg class="Rectangle_1">
 		<rect fill="rgba(103,103,103,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1622" height="261">
 		</rect>
@@ -3000,7 +2988,7 @@ window.application = new Application();
 	<div id="JLPB_Constriction_Supplies">
 		<span>JLPB Constriction Supplies</span>
 	</div>
-	<div id="Home_y">
+	<div id="Home">
 		<span>Home</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="About_">
@@ -3023,7 +3011,7 @@ window.application = new Application();
 		</rect>
 	</svg>
 	<svg class="Rectangle_6">
-		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_6" rx="15" ry="15" x="0" y="0" width="128" height="44">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" onclick="application.goToTargetView(event)" id="Rectangle_6" rx="15" ry="15" x="0" y="0" width="128" height="44">
 		</rect>
 	</svg>
 	<div id="Sign_Up_for_Info_">
@@ -3032,7 +3020,7 @@ window.application = new Application();
 	<div id="Email___">
 		<span>Email...</span>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="Sign_Up">
+	<div id="Sign_Up">
 		<span>Sign Up</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="banner">
